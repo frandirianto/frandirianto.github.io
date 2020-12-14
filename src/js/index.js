@@ -6,15 +6,14 @@ let observer = new IntersectionObserver(
                     element.target.classList.add("is-in");
 
                 if (element.target.dataset.name === "page") {
-                    console.log(element.target.dataset.name);
                     document
-                        .getElementsByClassName("nav-title")
+                        .getElementsByClassName("nav-item")
                         [element.target.dataset.page].classList.add("active");
                 }
             } else if (!element.isIntersecting) {
                 if (element.target.dataset.name === "page")
                     document
-                        .getElementsByClassName("nav-title")
+                        .getElementsByClassName("nav-item")
                         [element.target.dataset.page].classList.remove(
                             "active"
                         );
@@ -43,8 +42,8 @@ let pages = [
     document.getElementById("home"),
     document.getElementById("about"),
     document.getElementById("skills"),
-    document.getElementById("contacts"),
     document.getElementById("projects"),
+    document.getElementById("contacts"),
 ];
 
 Array.from(pages).forEach((element) => {
@@ -73,7 +72,7 @@ TypeWritter.prototype.type = function () {
 
     this.txtElement.textContent = `${this.txt}`;
 
-    let typeSpeed = 300;
+    let typeSpeed = 100;
 
     if (this.isDeleting) {
         typeSpeed /= 2;
@@ -91,12 +90,17 @@ TypeWritter.prototype.type = function () {
     setTimeout(() => this.type(), typeSpeed);
 };
 
-document.addEventListener("DOMContentLoaded", init);
-
 function init() {
     const txtElement = document.querySelector(".txt");
-    let { words, wait } = txtElement.dataset;
-    words = JSON.parse(words);
+    let wait = 3000;
+    let words = [
+        "Indonesian",
+        "Full-stack Developer",
+        "Laboratory Instructor",
+        "Network Administrator",
+    ];
 
     new TypeWritter(txtElement, words, wait);
 }
+
+document.addEventListener("DOMContentLoaded", init);

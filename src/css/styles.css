@@ -52,12 +52,7 @@ a,
 button {
   cursor: pointer;
   border: none;
-  transition: all 0.2s linear;
-}
-
-button {
-  background: black;
-  padding: 8px;
+  transition: color 300ms linear;
 }
 
 header {
@@ -165,6 +160,109 @@ header nav ul li:hover::before, header nav ul li.active::before {
   transform-origin: center center;
 }
 
+.background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+.background img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.heading {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  margin: auto;
+  background-image: radial-gradient(farthest-side at center, black, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+}
+.heading button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 16px;
+  position: relative;
+  border: none;
+  background: transparent;
+}
+.heading button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--primary-color);
+  z-index: 0;
+  background: transparent;
+  transition: transform 300ms ease-out;
+}
+.heading button a {
+  position: relative;
+  z-index: 1;
+}
+.heading button:hover span {
+  color: black;
+}
+.heading button:hover::after {
+  background-color: var(--primary-color);
+  transform: scaleX(0.9);
+}
+
+.heading-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-name,
+.heading-desc,
+.heading-title {
+  padding: 4px;
+  font-family: "Raleway", sans-serif;
+}
+
+.heading-name {
+  transform: translateY(50px);
+  opacity: 0;
+  font-size: 80px;
+  transition: transform 500ms ease-in, opacity 1s ease-in;
+}
+
+.heading-title {
+  font-size: 48px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 500ms ease-in, opacity 500ms ease-in;
+}
+
+.heading-desc {
+  padding: 8px 4px;
+  font-size: 24px;
+}
+
+.type-writter {
+  margin: auto;
+  display: flex;
+}
+.type-writter .txt {
+  position: relative;
+}
+.type-writter .txt::after {
+  content: " ";
+  position: relative;
+  right: -3px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--primary-color);
+  opacity: 1;
+}
+.type-writter .txt-animation::after {
+  animation: sparkling 1s linear infinite;
+}
+
 main {
   width: 100%;
   display: block;
@@ -187,6 +285,7 @@ main #contacts {
 main #about {
   max-width: 1200px;
   display: flex;
+  flex-direction: column;
   padding: 16px;
   justify-content: space-between;
   align-items: center;
@@ -227,7 +326,7 @@ main #about-desc {
 main #about-desc p,
 main #about-desc h1 {
   padding: 12px 16px;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 main #skills section {
   width: inherit;
@@ -245,9 +344,6 @@ main #skills section div {
   justify-content: center;
   align-items: center;
   transition: transform 500ms ease-out;
-}
-main #skills section div:hover {
-  box-shadow: 0 1px 4px whitesmoke;
 }
 main #skills section div img {
   width: 50px;
@@ -272,7 +368,7 @@ main #contacts section div {
   background-color: var(--accent-color-darken);
   margin: 8px;
   border-radius: 8px;
-  padding: 8px;
+  padding: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -288,15 +384,12 @@ main #contacts section div img {
 }
 main #contacts section div span {
   bottom: 0;
-  padding: 0 8px;
-}
-main #contacts section div:hover {
-  box-shadow: 0 1px 4px whitesmoke;
+  padding: 0 16px;
 }
 main #projects section {
   margin: 16px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 16px;
 }
 main #projects section div {
@@ -310,12 +403,9 @@ main #projects section div {
   align-items: center;
   transition: transform 500ms ease-out;
 }
-main #projects section div:hover {
-  box-shadow: 0 1px 4px whitesmoke;
-}
 main #projects section div img {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   margin-bottom: 8px;
   transform: translateY(50px);
@@ -324,89 +414,6 @@ main #projects section div img {
 }
 main #projects section div span {
   bottom: 0;
-}
-
-.background {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: -1;
-}
-.background img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.heading {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  margin: auto;
-  background-image: radial-gradient(farthest-side at center, black, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
-}
-.heading a {
-  display: inline-block;
-  border: 1px solid var(--primary-color);
-  margin-top: 8px;
-  padding: 12px;
-}
-.heading a:hover {
-  background-color: var(--primary-color);
-}
-.heading a:hover span {
-  color: black;
-}
-
-.heading-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.heading-name,
-.heading-desc,
-.heading-title {
-  padding: 4px;
-  font-family: "Raleway", sans-serif;
-}
-
-.heading-name {
-  transform: translateY(50px);
-  opacity: 0;
-  font-size: 80px;
-  transition: transform 500ms ease-in, opacity 1s ease-in;
-}
-
-.heading-title {
-  font-size: 48px;
-  padding: 16px;
-  transition: transform 500ms ease-in, opacity 500ms ease-in;
-}
-
-.heading-desc {
-  padding: 8px 4px;
-  font-size: 24px;
-}
-
-.type-writter {
-  margin: auto;
-  display: flex;
-}
-.type-writter .txt {
-  position: relative;
-}
-.type-writter .txt::after {
-  content: " ";
-  position: relative;
-  right: -3px;
-  top: 0;
-  height: 100%;
-  width: 2px;
-  background-color: var(--primary-color);
-  opacity: 1;
-}
-.type-writter .txt-animation::after {
-  animation: sparkling 1s linear infinite;
 }
 
 footer {
@@ -427,7 +434,7 @@ footer ul a {
   border: 1px solid var(--primary-color);
   padding: 4px 8px;
 }
-footer ul a:first-child {
+footer ul a span:first-child {
   position: relative;
   top: -2px;
   width: 15px;
@@ -503,5 +510,11 @@ footer ul a:hover span {
   }
   main #skills section {
     grid-template-columns: repeat(auto-fill, 20%);
+  }
+  main #projects section {
+    grid-template-columns: 1fr 1fr;
+  }
+  main #projects section div img {
+    width: 100%;
   }
 }
