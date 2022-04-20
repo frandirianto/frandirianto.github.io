@@ -1,400 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./src/css/styles.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap&family=Raleway:wght@400;700"
-            rel="stylesheet"
-        />
-        <title>Frandi Rianto</title>
-    </head>
-    <body class="scrollbar">
-        <header>
-            <nav>
-                <ul>
-                    <li class="nav-item">
-                        <a href="#home">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about">
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#skills">
-                            <span>Skills</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects">
-                            <span>Portofolio</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contacts">
-                            <span>Contacts</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div id="home" data-name="page" data-page="0">
-                <div class="heading">
-                    <h3 class="heading-desc">Hello, I'm</h3>
-                    <h1 class="heading-name" data-name="element">FRANDI</h1>
-                    <h1 class="heading-name" data-name="element">RIANTO</h1>
-                    <div class="type-writter">
-                        <div class="heading-desc">I'm</div>
-                        <div class="txt heading-desc"></div>
-                    </div>
-                    <button>
-                        <a href="#projects"><span>View My Works</span></a>
-                    </button>
-                </div>
-                <div class="background">
-                    <img src="./src/images/bg.jpg" alt="background" />
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Frandi Rianto" />
+    <meta name="description" content="Personal Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/f.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap&family=Raleway:wght@400;700"
+      rel="stylesheet"
+    />
+    <title>Frandi Rianto</title>
+  </head>
+  <body class="scrollbar">
+    <div id="particles-js"></div>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <a href="#home">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about">
+              <span>About Me</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills">
+              <span>Skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects">
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts">
+              <span>Contacts</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="home" data-name="page" data-page="0">
+        <div class="home-content">
+          <div class="home-image">
+            <img
+              src="./src/images/images3.svg"
+              alt="home-image"
+              class="home-images"
+              data-name="element"
+            />
+          </div>
+          <div class="home-detail">
+            <div class="heading-wrapper">
+              <h1 class="heading-desc">Hello,</h1>
+              <h1 class="heading-name" data-name="element">I'm Frandi,</h1>
+              <h1 class="heading-subtitle">Software Engineer</h1>
             </div>
-            <div id="about" data-name="page" data-page="1">
-                <aside id="about-profile" data-name="element">
-                    <div>
-                        <img
-                            src="./src/images/profile.jpg"
-                            alt="profile-picture"
-                        />
-                    </div>
-                    <div>
-                        <span>Name : </span>
-                        <span>Frandi Rianto</span>
-                    </div>
-                    <div>
-                        <span>Age: </span>
-                        <span>20 Years</span>
-                    </div>
-                    <div>
-                        <span>Experience : </span>
-                        <span>1,5 years</span>
-                    </div>
-                    <div>
-                        <span>Nationality : </span>
-                        <span>Indonesia</span>
-                    </div>
-                </aside>
-                <article id="about-desc" data-name="element">
-                    <div>
-                        <h3 class="heading-title">About</h3>
-                    </div>
-                    <div>
-                        <h1>Hello my name is Frandi Rianto,</h1>
-                        <p>
-                            A 20 years old undergraduate student at Bina
-                            Nusantara University and currently working as an
-                            Operation System and Development Staff at Lab Center
-                            Alam Sutera, which is where my passion for coding,
-                            development, and design converge.
-                        </p>
-                        <p>
-                            Well-organized person, hard worker, problem solver,
-                            love to learn a new thing, and software development
-                            enthusiast who has a high interest in full-stack
-                            development and experience as Laboratory Instructor.
-                            Interested in the entire web development and working
-                            on ambitious projects with positive people and also
-                            working on a few side projects
-                        </p>
-                    </div>
-                </article>
+            <div class="type-writter">
+              <span class="heading-desc">Experienced as</span>
+              <div class="txt heading-desc"></div>
             </div>
-            <div id="skills" data-name="page" data-page="2">
-                <div class="heading-wrapper">
-                    <h3 class="heading-title">Skills</h3>
-                </div>
-                <section>
-                    <div>
-                        <img
-                            src="./src/logos/html5.svg"
-                            alt="HTML5"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>HTML5</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/css3.svg"
-                            alt="CSS3"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>CSS3</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/javascript.svg"
-                            alt="Javascript"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Javascript</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/typescript.svg"
-                            alt="Typescript"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Typescript</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/php.svg"
-                            alt="PHP"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>PHP</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/mysql.svg"
-                            alt="MySQL"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>MySQl</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/sass.svg"
-                            alt="SASS"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>SASS</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/react.svg"
-                            alt="React"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>React</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/redux-saga.svg"
-                            alt="ReduxSaga"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Redux Saga</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/laravel.svg"
-                            alt="Laravel"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Laravel</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/java.svg"
-                            alt="Java"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Java</span>
-                    </div>
+            <button>
+              <a href="#projects"><span>View My Works</span></a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="about" data-name="page" data-page="1">
+        <div>
+          <h2 class="heading-title">About Me</h2>
+        </div>
+        <div id="about-image">
+          <img
+            src="./src/images/images5.svg"
+            alt="profile-picture"
+            class="about-images"
+            data-name="element"
+          />
+        </div>
+        <article id="about-desc">
+          <div id="about-detail">
+            <p>
+              A fresh graduate who is high interested in backend development,
+              application development, and frontend development with a
+              background of 2 years in software engineering.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div id="skills" data-name="page" data-page="2">
+        <div class="heading-wrapper">
+          <h2 class="heading-title">Skills</h2>
+        </div>
+        <section>
+          <div>
+            <img
+              src="./src/logos/html5.svg"
+              alt="HTML5"
+              class="logo"
+              data-name="element"
+            />
+            <span>HTML5</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/css3.svg"
+              alt="CSS3"
+              class="logo"
+              data-name="element"
+            />
+            <span>CSS3</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/javascript.svg"
+              alt="Javascript"
+              class="logo"
+              data-name="element"
+            />
+            <span>Javascript</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/typescript.svg"
+              alt="Typescript"
+              class="logo"
+              data-name="element"
+            />
+            <span>Typescript</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/php.svg"
+              alt="PHP"
+              class="logo"
+              data-name="element"
+            />
+            <span>PHP</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/mysql.svg"
+              alt="MySQL"
+              class="logo"
+              data-name="element"
+            />
+            <span>MySQl</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/sass.svg"
+              alt="SASS"
+              class="logo"
+              data-name="element"
+            />
+            <span>SASS</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/react.svg"
+              alt="React"
+              class="logo"
+              data-name="element"
+            />
+            <span>React</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/redux-saga.svg"
+              alt="ReduxSaga"
+              class="logo"
+              data-name="element"
+            />
+            <span>Redux Saga</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/laravel.svg"
+              alt="Laravel"
+              class="logo"
+              data-name="element"
+            />
+            <span>Laravel</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/java.svg"
+              alt="Java"
+              class="logo"
+              data-name="element"
+            />
+            <span>Java</span>
+          </div>
 
-                    <div>
-                        <img
-                            src="./src/logos/c--4.svg"
-                            alt="C#"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>C#</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/c.svg"
-                            alt="C"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>C</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/github.svg"
-                            alt="Git"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Git</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/microsoft-sql-server.svg"
-                            alt="T-SQL"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>T-SQL</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/npm.svg"
-                            alt="npm"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>npm</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/json.svg"
-                            alt="JSON"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>JSON</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/firebase.svg"
-                            alt="Firebase"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Firebase</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/android-studio.svg"
-                            alt="AndroidStudio"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Android Studio</span>
-                    </div>
-                </section>
-            </div>
-            <div id="projects" data-name="page" data-page="3">
-                <div class="heading-wrapper">
-                    <h3 class="heading-title">Projects</h3>
-                </div>
-                <section>
-                    <div>
-                        <img
-                            src="./src/images/binus.png"
-                            alt="lcas-elearning"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>LCAS ELearning (Online Quiz)</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/images/bpnn-visualizer.png"
-                            alt="bpnn-visualizer"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>BPNN Visualizer</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/images/uigram.png"
-                            alt="UIGram"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>UIGram</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/images/uigram-api.jpg"
-                            alt="UIGram-API"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>UIGram API</span>
-                    </div>
-                </section>
-            </div>
-            <div id="contacts" data-name="page" data-page="4">
-                <div class="heading-wrapper">
-                    <h3 class="heading-title">Contacts</h3>
-                </div>
-                <section>
-                    <div>
-                        <img
-                            src="./src/logos/gmail.svg"
-                            alt="Email"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>frandirianto@gmail.com</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/whatsapp.svg"
-                            alt="Whatsapp"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>+6282299025588</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/linkedin.svg"
-                            alt="Linkedin"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Frandi Rianto</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/instagram.svg"
-                            alt="Instagram"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>frandirianto</span>
-                    </div>
-                    <div>
-                        <img
-                            src="./src/logos/facebook.svg"
-                            alt="Facebook"
-                            class="logo"
-                            data-name="element"
-                        />
-                        <span>Frandi Rianto</span>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <footer>
-            <ul>
-                <li>
-                    <span>All Right Reserved &copy; 2020</span>
-                </li>
-                <li>
-                    <a href="#home"><span>↑</span> <span>Back to top</span></a>
-                </li>
-            </ul>
-        </footer>
-    </body>
-    <script src="./src/js/index.js"></script>
+          <div>
+            <img
+              src="./src/logos/c--4.svg"
+              alt="C#"
+              class="logo"
+              data-name="element"
+            />
+            <span>C#</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/c.svg"
+              alt="C"
+              class="logo"
+              data-name="element"
+            />
+            <span>C</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/github.svg"
+              alt="Git"
+              class="logo"
+              data-name="element"
+            />
+            <span>Git</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/microsoft-sql-server.svg"
+              alt="T-SQL"
+              class="logo"
+              data-name="element"
+            />
+            <span>T-SQL</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/npm.svg"
+              alt="npm"
+              class="logo"
+              data-name="element"
+            />
+            <span>npm</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/json.svg"
+              alt="JSON"
+              class="logo"
+              data-name="element"
+            />
+            <span>JSON</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/firebase.svg"
+              alt="Firebase"
+              class="logo"
+              data-name="element"
+            />
+            <span>Firebase</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/android-studio.svg"
+              alt="AndroidStudio"
+              class="logo"
+              data-name="element"
+            />
+            <span>Android Studio</span>
+          </div>
+        </section>
+      </div>
+      <div id="projects" data-name="page" data-page="3">
+        <div class="heading-wrapper">
+          <h2 class="heading-title">Projects</h2>
+        </div>
+        <section>
+          <div>
+            <img
+              src="./src/images/binus.png"
+              alt="lcas-elearning"
+              class="logo"
+              data-name="element"
+            />
+            <span>LCAS ELearning (Online Quiz)</span>
+          </div>
+          <div>
+            <img
+              src="./src/images/bpnn-visualizer.png"
+              alt="bpnn-visualizer"
+              class="logo"
+              data-name="element"
+            />
+            <span>BPNN Visualizer</span>
+          </div>
+          <div>
+            <img
+              src="./src/images/uigram.png"
+              alt="UIGram"
+              class="logo"
+              data-name="element"
+            />
+            <span>UIGram</span>
+          </div>
+          <div>
+            <img
+              src="./src/images/uigram-api.jpg"
+              alt="UIGram-API"
+              class="logo"
+              data-name="element"
+            />
+            <span>UIGram API</span>
+          </div>
+        </section>
+      </div>
+      <div id="contacts" data-name="page" data-page="4">
+        <div class="heading-wrapper">
+          <h2 class="heading-title">Contacts</h2>
+        </div>
+        <section>
+          <div>
+            <img
+              src="./src/logos/gmail.svg"
+              alt="Email"
+              class="logo"
+              data-name="element"
+            />
+            <a href="mailto:frandirianto@gmail.com">frandirianto@gmail.com</a>
+          </div>
+          <div>
+            <img
+              src="./src/logos/whatsapp.svg"
+              alt="Whatsapp"
+              class="logo"
+              data-name="element"
+            />
+            <a href="tel:+6282299025588">+6282299025588</a>
+          </div>
+          <div>
+            <img
+              src="./src/logos/linkedin.svg"
+              alt="Linkedin"
+              class="logo"
+              data-name="element"
+            />
+            <a href="https://www.linkedin.com/in/frandirianto">Frandi Rianto</a>
+          </div>
+          <div>
+            <img
+              src="./src/logos/github.svg"
+              alt="Github"
+              class="logo"
+              data-name="element"
+            />
+            <a href="https://github.com/frandirianto">Frandi Rianto</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <span>All Right Reserved &copy; 2020</span>
+        </li>
+        <li>
+          <a href="#home"><span>↑</span> <span>Back to top</span></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="./src/js/particles.js"></script>
+  <script src="./src/js/app.js"></script>
+  <script src="./src/js/index.js"></script>
 </html>
