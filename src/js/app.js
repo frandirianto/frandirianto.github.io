@@ -1,5 +1,3 @@
-particlesJS.load('particles-js', 'particles.json');
-
 particlesJS(
   'particles-js',
 

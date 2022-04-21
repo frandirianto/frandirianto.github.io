@@ -5,7 +5,7 @@
     <meta name="author" content="Frandi Rianto" />
     <meta name="description" content="Personal Website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./src/f.ico" type="image/x-icon" />
+    <link rel="icon" href="./f.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./src/css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap&family=Raleway:wght@400;700"
@@ -47,7 +47,7 @@
       </nav>
     </header>
     <main>
-      <div id="home" data-name="page" data-page="0">
+      <section class="home container" id="home" data-name="page" data-page="0">
         <div class="home-content">
           <div class="home-image">
             <img
@@ -67,17 +67,27 @@
               <span class="heading-desc">Experienced as</span>
               <div class="txt heading-desc"></div>
             </div>
-            <button>
-              <a href="#projects"><span>View My Works</span></a>
-            </button>
+            <div class="home-links">
+              <button>
+                <a href="https://linkedin.com/in/frandirianto">Linkedin</a>
+              </button>
+              <button>
+                <a href="#projects">View My Works</a>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="about" data-name="page" data-page="1">
+      </section>
+      <section
+        class="about container"
+        id="about"
+        data-name="page"
+        data-page="1"
+      >
         <div>
           <h2 class="heading-title">About Me</h2>
         </div>
-        <div id="about-image">
+        <div class="about-image">
           <img
             src="./src/images/images5.svg"
             alt="profile-picture"
@@ -85,39 +95,34 @@
             data-name="element"
           />
         </div>
-        <article id="about-desc">
-          <div id="about-detail">
-            <p>
-              A fresh graduate who is high interested in backend development,
-              application development, and frontend development with a
-              background of 2 years in software engineering.
-            </p>
-          </div>
-        </article>
-      </div>
-      <div id="skills" data-name="page" data-page="2">
+        <div class="about-desc">
+          <p>
+            A fresh graduate who is high interested in backend development,
+            application development, and frontend development with a background
+            of 2 years in software engineering.
+          </p>
+        </div>
+      </section>
+      <section
+        class="skills container"
+        id="skills"
+        data-name="page"
+        data-page="2"
+      >
         <div class="heading-wrapper">
           <h2 class="heading-title">Skills</h2>
         </div>
         <section>
           <div>
             <img
-              src="./src/logos/html5.svg"
-              alt="HTML5"
+              src="./src/logos/java.svg"
+              alt="Java"
               class="logo"
               data-name="element"
             />
-            <span>HTML5</span>
+            <span>Java</span>
           </div>
-          <div>
-            <img
-              src="./src/logos/css3.svg"
-              alt="CSS3"
-              class="logo"
-              data-name="element"
-            />
-            <span>CSS3</span>
-          </div>
+
           <div>
             <img
               src="./src/logos/javascript.svg"
@@ -126,60 +131,6 @@
               data-name="element"
             />
             <span>Javascript</span>
-          </div>
-          <div>
-            <img
-              src="./src/logos/typescript.svg"
-              alt="Typescript"
-              class="logo"
-              data-name="element"
-            />
-            <span>Typescript</span>
-          </div>
-          <div>
-            <img
-              src="./src/logos/php.svg"
-              alt="PHP"
-              class="logo"
-              data-name="element"
-            />
-            <span>PHP</span>
-          </div>
-          <div>
-            <img
-              src="./src/logos/mysql.svg"
-              alt="MySQL"
-              class="logo"
-              data-name="element"
-            />
-            <span>MySQl</span>
-          </div>
-          <div>
-            <img
-              src="./src/logos/sass.svg"
-              alt="SASS"
-              class="logo"
-              data-name="element"
-            />
-            <span>SASS</span>
-          </div>
-          <div>
-            <img
-              src="./src/logos/react.svg"
-              alt="React"
-              class="logo"
-              data-name="element"
-            />
-            <span>React</span>
-          </div>
-          <div>
-            <img
-              src="./src/logos/redux-saga.svg"
-              alt="ReduxSaga"
-              class="logo"
-              data-name="element"
-            />
-            <span>Redux Saga</span>
           </div>
           <div>
             <img
@@ -192,14 +143,85 @@
           </div>
           <div>
             <img
-              src="./src/logos/java.svg"
-              alt="Java"
+              src="./src/logos/react.svg"
+              alt="React"
               class="logo"
               data-name="element"
             />
-            <span>Java</span>
+            <span>React</span>
           </div>
-
+          <div>
+            <img
+              src="./src/logos/redux.svg"
+              alt="ReduxSaga"
+              class="logo"
+              data-name="element"
+            />
+            <span>Redux</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/typescript.svg"
+              alt="Typescript"
+              class="logo"
+              data-name="element"
+            />
+            <span>Typescript</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/dotnet.svg"
+              alt=".Net Core"
+              class="logo"
+              data-name="element"
+            />
+            <span>.NET Core Web App</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/nodejs.svg"
+              alt="NodeJS"
+              class="logo"
+              data-name="element"
+            />
+            <span>Node.Js</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/express.svg"
+              alt="Express.Js"
+              class="logo"
+              data-name="element"
+            />
+            <span>Express.Js</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/mysql.svg"
+              alt="MySQL"
+              class="logo"
+              data-name="element"
+            />
+            <span>MySQl</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/microsoft-sql-server.svg"
+              alt="SQL Server"
+              class="logo"
+              data-name="element"
+            />
+            <span>SQL Server</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/postgresql.svg"
+              alt="Postgre SQL"
+              class="logo"
+              data-name="element"
+            />
+            <span>PostgreSQL</span>
+          </div>
           <div>
             <img
               src="./src/logos/c--4.svg"
@@ -220,39 +242,66 @@
           </div>
           <div>
             <img
-              src="./src/logos/github.svg"
-              alt="Git"
+              src="./src/logos/php.svg"
+              alt="PHP"
               class="logo"
               data-name="element"
             />
-            <span>Git</span>
+            <span>PHP</span>
           </div>
           <div>
             <img
-              src="./src/logos/microsoft-sql-server.svg"
-              alt="T-SQL"
+              src="./src/logos/html5.svg"
+              alt="HTML5"
               class="logo"
               data-name="element"
             />
-            <span>T-SQL</span>
+            <span>HTML5</span>
           </div>
           <div>
             <img
-              src="./src/logos/npm.svg"
-              alt="npm"
+              src="./src/logos/css3.svg"
+              alt="CSS3"
               class="logo"
               data-name="element"
             />
-            <span>npm</span>
+            <span>CSS3</span>
           </div>
           <div>
             <img
-              src="./src/logos/json.svg"
-              alt="JSON"
+              src="./src/logos/sass.svg"
+              alt="SASS"
               class="logo"
               data-name="element"
             />
-            <span>JSON</span>
+            <span>SASS</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/jquery.svg"
+              alt="JQuery"
+              class="logo"
+              data-name="element"
+            />
+            <span>JQuery</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/python.svg"
+              alt="Python"
+              class="logo"
+              data-name="element"
+            />
+            <span>Python</span>
+          </div>
+          <div>
+            <img
+              src="./src/logos/android-studio.svg"
+              alt="AndroidStudio"
+              class="logo"
+              data-name="element"
+            />
+            <span>Android Studio</span>
           </div>
           <div>
             <img
@@ -265,23 +314,46 @@
           </div>
           <div>
             <img
-              src="./src/logos/android-studio.svg"
-              alt="AndroidStudio"
+              src="./src/logos/github.svg"
+              alt="Git"
               class="logo"
               data-name="element"
             />
-            <span>Android Studio</span>
+            <span>Git</span>
           </div>
         </section>
-      </div>
-      <div id="projects" data-name="page" data-page="3">
+      </section>
+      <section
+        class="projects container"
+        id="projects"
+        data-name="page"
+        data-page="3"
+      >
         <div class="heading-wrapper">
           <h2 class="heading-title">Projects</h2>
         </div>
         <section>
           <div>
             <img
-              src="./src/images/binus.png"
+              src="./src/images/lab-facility.png"
+              alt="lab-facility-binus"
+              class="logo"
+              data-name="element"
+            />
+            <span>Lab Facility BINUS</span>
+          </div>
+          <div>
+            <img
+              src="./src/images/lecturer-data-dashboard.jpg"
+              alt="lecuturer-data-dashboard"
+              class="logo"
+              data-name="element"
+            />
+            <span>Lecturer Data Dashboard</span>
+          </div>
+          <div>
+            <img
+              src="./src/images/lcas-elearning.png"
               alt="lcas-elearning"
               class="logo"
               data-name="element"
@@ -300,7 +372,7 @@
           <div>
             <img
               src="./src/images/uigram.png"
-              alt="UIGram"
+              alt="uigram"
               class="logo"
               data-name="element"
             />
@@ -309,15 +381,29 @@
           <div>
             <img
               src="./src/images/uigram-api.jpg"
-              alt="UIGram-API"
+              alt="uigram-api"
               class="logo"
               data-name="element"
             />
             <span>UIGram API</span>
           </div>
+          <div>
+            <img
+              src="./src/images/bloodfor-1.png"
+              alt="bloodfor"
+              class="logo"
+              data-name="element"
+            />
+            <span>BloodFOR</span>
+          </div>
         </section>
-      </div>
-      <div id="contacts" data-name="page" data-page="4">
+      </section>
+      <section
+        class="contacts container"
+        id="contacts"
+        data-name="page"
+        data-page="4"
+      >
         <div class="heading-wrapper">
           <h2 class="heading-title">Contacts</h2>
         </div>
@@ -359,7 +445,7 @@
             <a href="https://github.com/frandirianto">Frandi Rianto</a>
           </div>
         </section>
-      </div>
+      </section>
     </main>
     <footer>
       <ul>
@@ -372,7 +458,7 @@
       </ul>
     </footer>
   </body>
-  <script src="./src/js/particles.js"></script>
-  <script src="./src/js/app.js"></script>
-  <script src="./src/js/index.js"></script>
+  <script src="/src/js/particles.js"></script>
+  <script src="/src/js/app.js"></script>
+  <script src="/src/js/index.js"></script>
 </html>
