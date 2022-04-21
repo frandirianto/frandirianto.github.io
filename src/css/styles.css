@@ -216,7 +216,6 @@ main .home-content {
   justify-content: center;
 }
 main .home-images {
-  padding: 50px;
   width: 300px;
   height: auto;
   object-fit: contain;
@@ -313,12 +312,12 @@ main .about-desc {
   display: flex;
   flex-direction: column;
   margin: 16px;
-  background-color: var(--accent-color-darken);
+  background-color: var(--box-shadow);
   border-radius: 8px;
 }
 main .about-desc p {
   padding: 12px 16px;
-  font-size: 1.3em;
+  font-size: 18px;
 }
 main .skills section {
   width: inherit;
@@ -500,6 +499,8 @@ footer ul a:hover span {
   }
   main .home-images {
     width: 500px;
+    height: auto;
+    padding: 50px;
   }
   main .home .type-writter {
     flex-direction: row;
@@ -520,7 +521,18 @@ footer ul a:hover span {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1037px) {
+  main .heading-title, main .heading-subtitle {
+    font-size: 64px;
+  }
+  main .home-detail {
+    width: 600px;
+  }
+  main .home-image {
+    order: 2;
+  }
+}
+@media screen and (min-width: 1300px) {
   main .home-content {
     justify-content: space-between;
   }
@@ -536,8 +548,11 @@ footer ul a:hover span {
   main .home .type-writter .txt {
     padding-left: 8px;
   }
-  main .about-image img {
-    width: 500px;
+  main .about-image {
+    padding: 50px;
+  }
+  main .about-images {
+    width: 700px;
   }
   main #skills section {
     grid-template-columns: repeat(auto-fill, 20%);
