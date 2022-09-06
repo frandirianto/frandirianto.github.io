@@ -102,6 +102,7 @@ function init() {
   let wait = 3000;
   let words = [
     'Application Developer',
+    'IT Specialist',
     'System Development Staff',
     'Laboratory Instructor',
   ];
